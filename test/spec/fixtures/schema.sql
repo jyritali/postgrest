@@ -1685,8 +1685,7 @@ CREATE TABLE test.selectonly(
 );
 
 create view test.selectonly_view as
-select distinct id from test.selectonly;
-
+select id from test.selectonly;
 
 CREATE VIEW test.foos as select id,name from "Foo";
 CREATE VIEW test.bars as select id, "fooId", name from bar;
